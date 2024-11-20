@@ -1,0 +1,162 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fef9c3;
+  min-height: 100vh;
+}
+
+.about-content {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-weight: bold;
+  margin-top: 2px;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.about-description {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.about-image-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.image-frame {
+  border: 15px solid black;
+  border-radius: 60px;
+  width: 90%;
+  height: 200px;
+}
+
+.image-wrapper {
+  position: absolute;
+  top: auto;
+  left: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+}
+
+.about-image {
+
+  width: 60%;
+  height: 50%;
+  object-fit: cover;
+  
+}
+
+.swing-in-top-fwd {
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 640px) {
+  .about-section {
+    flex-direction: row;
+    padding-right: 15px;
+  }
+
+  .about-content {
+    padding: 32px;
+    margin-left: 50px;
+  }
+
+  .about-description {
+    font-size: 16px;
+    text-align: start;
+  }
+
+  .about-image-container {
+    align-items: center;
+  }
+
+  .image-wrapper {
+    bottom: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .about-image-container {
+    width: 50%;
+  }
+
+  .image-frame {
+    border-width: 20px;
+  }
+
+  .image-wrapper {
+    bottom: 150px;
+    left: 85px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-title {
+    font-size: 60px;
+  }
+
+  .about-image-container {
+    margin-top: 60px;
+  }
+
+  .image-frame {
+    height: 230px;
+  }
+
+  .image-wrapper {
+    bottom: 90px;
+    left: 120px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .about-image {
+    width: 350px;
+    height: 350px;
+  }
+}

@@ -1,0 +1,125 @@
+/* Section styling */
+.sec3-section {
+  padding-top: 70px;
+  margin-top: 0;
+  background: linear-gradient(to bottom, #fb923c, #fb8500);
+  color: white;
+}
+
+/* Header styles */
+.sec3-header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.sec3-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.sec3-description {
+  margin-top: 1rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.875rem;
+}
+
+/* Cards container */
+.sec3-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Card styling */
+.sec3-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Image styling */
+.sec3-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Card text styling */
+.sec3-card-text {
+  padding: 1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sec3-card-text:hover {
+  background-color: #fde047;
+  color: black;
+}
+
+.sec3-card-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.sec3-card-description {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+.sec3-card2{
+  height: 30.3125rem;
+}
+/* Responsive styles */
+@media (min-width: 640px) {
+  .sec3-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .sec3-title {
+    font-size: 3rem;
+  }
+
+  .sec3-description {
+    font-size: 1rem;
+  }
+
+  .sec3-card-title {
+    font-size: 1.25rem;
+  }
+
+  .sec3-card-description {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sec3-title {
+    font-size: 3.75rem;
+  }
+
+  .sec3-description {
+    font-size: 1.125rem;
+  }
+
+  .sec3-card {
+    width: calc(50% - 1rem);
+    max-width: 400px;
+  }
+}

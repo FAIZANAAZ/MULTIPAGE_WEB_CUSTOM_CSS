@@ -1,0 +1,120 @@
+.nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background: linear-gradient(to right, #fde047, #ffffff);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  .logo-image {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .desktop-menu {
+    display: none;
+  }
+  
+  .nav-link {
+    transition: all 0.3s;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #fb923c;
+    font-weight: bold;
+  }
+  
+  .mobile-menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    right: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    height: 260px;
+    width: 160px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 16px;
+  }
+  
+  .mobile-nav-link {
+    margin-bottom: 20px;
+    transition: all 0.3s;
+  }
+  
+  .mobile-nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #fb923c;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 640px) {
+    .logo-container {
+      margin-left: 20px;
+    }
+  
+    .logo-image {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .desktop-menu {
+      display: flex;
+      position: absolute;
+      right: 50px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    .nav-link {
+      margin-left: 30px;
+    }
+  
+    .mobile-menu-button {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-menu {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .desktop-menu {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  
+    .nav-link {
+      margin-left: 80px;
+    }
+  }
